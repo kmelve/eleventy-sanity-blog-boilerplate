@@ -1,0 +1,29 @@
+{
+  "name": "11ty-sanity-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "dev": "lerna run dev --parallel",
+    "format": "lerna run format",
+    "build-studio": "(cd studio && npm run build)",
+    "build-web": "(cd web && npm run build)",
+    "postinstall": "lerna bootstrap",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmelve/11ty-sanity-experiment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmelve/11ty-sanity-experiment/issues"
+  },
+  "homepage": "https://github.com/kmelve/11ty-sanity-experiment#readme",
+  "devDependencies": {
+    "lerna": "^3.13.4"
+  }
+}
