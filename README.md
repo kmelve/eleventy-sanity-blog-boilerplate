@@ -1,4 +1,4 @@
-# 11ty-sanity-experiment
+# Blog with 11ty and Sanity.io
 
 Minimal blog with [Eleventy](https://11ty.io) and Sanity.
 
