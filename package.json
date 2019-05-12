@@ -7,6 +7,7 @@
     "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
     "format": "lerna run format",
+    "sanity-init": "(cd studio && npm run init)",
     "build-studio": "(cd studio && npm run build)",
     "build-web": "(cd web && npm run build)",
     "postinstall": "lerna bootstrap",

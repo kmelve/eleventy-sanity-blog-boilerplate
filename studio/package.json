@@ -7,6 +7,7 @@
   "author": "Knut Melvær <knut@sanity.io>",
   "license": "UNLICENSED",
   "scripts": {
+    "init": "sanity init --reconfigure",
     "dev": "sanity start",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
     "build": "sanity build",
@@ -19,6 +20,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^0.140.17",
+    "@sanity/code-input": "^0.140.12",
     "@sanity/components": "^0.140.20",
     "@sanity/core": "^0.140.20",
     "@sanity/default-layout": "^0.140.20",
