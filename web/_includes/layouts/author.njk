@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-author
+---
+<h1>{{ author.name }}</h1>
+
+{{ author.bio | markdownify | safe }}
+
+<p><a href="{{ '/' | url }}">← Home</a></p>
