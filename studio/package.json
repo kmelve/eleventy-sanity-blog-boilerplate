@@ -11,6 +11,7 @@
     "dev": "sanity start",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
     "build": "sanity build",
+    "now-build": "sanity build",
     "graphql-deploy": "sanity graphql deploy --playground",
     "lint": "eslint .",
     "test": "sanity check"
@@ -20,6 +21,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^0.140.17",
+    "@sanity/cli": "^0.140.17",
     "@sanity/code-input": "^0.140.12",
     "@sanity/components": "^0.140.20",
     "@sanity/core": "^0.140.20",
