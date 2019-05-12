@@ -1,8 +1,8 @@
-# Blog with 11ty and Sanity.io
+# Eleventy and Sanity Blog Boilerplate
 
-Minimal blog with [Eleventy](https://11ty.io) and Sanity.
+Minimal blog with [Eleventy](https://11ty.io) and [Sanity](https://www.sanity.io).
 
-This is a monorepo with a pre-configured [Sanity Studio](https://www.sanity.io) (`/studio`) and a very basic setup of [Eleventy](https://11ty.io) (`/web`).
+This is a monorepo with a pre-configured Sanity Studio (`/studio`) and a very basic setup of Eleventy (`/web`).
 
 ## Quick start
 
