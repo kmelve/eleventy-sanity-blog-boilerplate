@@ -6,10 +6,7 @@
     { "src": "studio/package.json", "use": "@now/static-build" }
   ],
   "routes": [
-    { "src": "^/studio/(.*)", "dest": "/$1" },
-    { "src": "^/desk/(.*)", "headers":
-      { "Location": "/studio/desk/$1"  }
-    },
+    { "src": "^/studio/(.*)", "dest": "/studio/$1" },
     { "src": "^/static/favicon.ico", "dest": "/studio/static/favicon.ico" },
     { "src": "^/static/(.*)", "dest": "/studio/static/$1" },
     { "src": "^/(.*)", "dest": "/web/$1" }

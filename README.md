@@ -33,15 +33,24 @@ You can host both the studio and the 11ty blog on [Netlify](https://netlify.com)
 
 ## Deploy on `now`
 
-The `now.json` has configuration for deploying both the frontend and the studio on _one_ now deployment. The web frontend can be browsed from the root of your now domain. The Studio can be accessed on `https://<your-domain>.now.sh/desk`.
+The `now.json` has configuration for deploying both the frontend and the studio on _one_ now deployment. The web frontend can be browsed from the root of your now domain. The Studio can be accessed on `https://<your-domain>.now.sh/studio`.
 
-You have to add CORS-settings for the studio deployed on `now`.
+1. Add a `"basePath": "/studio"` to `sanity.json`:
 
-Go to your projects API-settings on [manage.sanity.io](https://manage.sanity.io) => Settings => API => CORS origins => Click "Add" => Add domain for the now deployment + Allow credentials.
+    ```json
+    "project": {
+        "name": "sanity-tutorial-blog",
+        "basePath": "/studio"
+      },
+    ```
 
-or
+2. You have to add CORS-settings for the studio deployed on `now`.
 
-```text
-> cd studio
-> sanity cors add https://<your-domain>.now.sh`
-```
+    Go to your projects API-settings on [manage.sanity.io](https://manage.sanity.io) => Settings => API => CORS origins => Click "Add" => Add domain for the now deployment + Allow credentials.
+
+    or
+
+    ```text
+    > cd studio
+    > sanity cors add https://<your-domain>.now.sh`
+    ```
