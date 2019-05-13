@@ -4,6 +4,13 @@ Minimal blog with [Eleventy](https://11ty.io) and [Sanity](https://www.sanity.io
 
 This is a monorepo with a pre-configured Sanity Studio (`/studio`) and a very basic setup of Eleventy (`/web`).
 
+- [Quick start](#quick-start)
+- [Deploy on Netlify](#deploy-on-netlify)
+  - [Studio](#studio)
+  - [Web](#web)
+- [Deploy on `now`](#deploy-on-now)
+- [CORS-settings for the Studio](#cors-settings-for-the-studio)
+
 ## Quick start
 
 1. `npm install` in the project root folder on local
@@ -24,6 +31,8 @@ You can host both the studio and the 11ty blog on [Netlify](https://netlify.com)
 - **Build command**: `npm run build && cp ./netlify.toml dist`
 - **Publish directory**: `studio/dist`
 
+You have to add [CORS-settings](#cors-settings-for-the-studio) for the studio deployed on Netlify.
+
 ### Web
 
 - **Repository**: `<your repository>`
@@ -43,14 +52,15 @@ The `now.json` has configuration for deploying both the frontend and the studio 
         "basePath": "/studio"
       },
     ```
-
 2. You have to add CORS-settings for the studio deployed on `now`.
 
-    Go to your projects API-settings on [manage.sanity.io](https://manage.sanity.io) => Settings => API => CORS origins => Click "Add" => Add domain for the now deployment + Allow credentials.
+## CORS-settings for the Studio
 
-    or
+Go to your projects API-settings on [manage.sanity.io](https://manage.sanity.io) => Settings => API => CORS origins => Click "Add" => Add domain for the now deployment + Allow credentials.
 
-    ```text
-    > cd studio
-    > sanity cors add https://<your-domain>.now.sh`
-    ```
+or
+
+```text
+> cd studio
+> sanity cors add https://<your-domain>.now.sh`
+```
