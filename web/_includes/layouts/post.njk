@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <h1>{{ post.title }}</h1>
-
+<p>Written by {% for author in post.authors %}{{author.name}}{% endfor %}  </p>
 {{ post.body | markdownify | safe }}
 
 <p><a href="{{ '/' | url }}">← Home</a></p>

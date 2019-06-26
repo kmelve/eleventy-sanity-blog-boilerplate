@@ -29,7 +29,7 @@ async function getPosts () {
         }
       }
     },
-    authors[]->
+    "authors": authors[].author->
   }`
   const order = `| order(publishedAt desc)`
   const query = [filter, projection, order].join(' ')
